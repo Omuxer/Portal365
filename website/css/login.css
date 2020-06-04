@@ -81,7 +81,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.arabic {
+.ar-font {
   font-family: "Tajawal", sans-serif;
 }
 
@@ -122,6 +122,11 @@ button {
   font-family: "poppins", sans-serif;
   color: var(--brandDark);
   font-weight: 300;
+}
+
+.ar-font input,
+.ar-font button {
+  font-family: "Tajawal", sans-serif;
 }
 
 input {
