@@ -302,6 +302,7 @@ main {
   .contents-wrapper {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    height: fit-content;
   }
   .remember-me-div,
   .forgot-password {
