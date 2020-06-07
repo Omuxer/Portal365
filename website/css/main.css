@@ -149,13 +149,9 @@ button {
 
 /* ------ GLOBAL | DISPLAY DIRECTIONS ------ */
 .rtl {
-  left: initial;
-  right: 0;
   background-position: right;
 }
 .ltr {
-  right: initial;
-  left: 0;
   background-position: left;
 }
 
@@ -222,6 +218,7 @@ main {
   font-size: var(--regular);
   justify-content: space-between;
   background-color: var(--white);
+  z-index: 2;
 }
 .contents-wrapper-header {
   display: flex;
@@ -298,7 +295,7 @@ main {
 }
 
 /* ------ LOGIN PAGE | MEDIA QUIREIS ------ */
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait), (max-width: 720px) {
   main {
     flex-direction: column;
   }
@@ -315,5 +312,13 @@ main {
   }
   button {
     margin: 1rem 0;
+  }
+}
+@media screen and (max-height: 540px) {
+  .illustrations-container {
+    display: none;
+  }
+  .contents-wrapper {
+    flex-basis: initial;
   }
 }
