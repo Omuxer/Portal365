@@ -163,6 +163,9 @@ button {
 .select-menu {
   background-color: var(--grey96);
 }
+.select-menu option {
+  background-color: white;
+}
 
 /* ------ GLOBAL | ICONS ------ */
 i {
