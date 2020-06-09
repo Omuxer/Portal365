@@ -94,6 +94,7 @@ a {
   text-decoration: none;
   transition-duration: 0.2s;
   cursor: pointer;
+  color: var(--brandDark);
 }
 .icon-link {
   display: flex;

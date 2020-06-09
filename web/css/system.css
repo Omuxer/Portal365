@@ -210,7 +210,6 @@ tr > :last-child {
 }
 .account-name {
   font-size: var(--t-xsmall);
-  color: var(--brandContent);
 }
 .account-menu {
   padding: var(--xxsmall);
