@@ -3,8 +3,8 @@
   /* ------ VARIABLES | COLORS ------ */
   --brandGreen: #00cc99;
   --brandDark: hsl(240, 100%, 10%);
-  --brandText: hsl(240, 50%, 25%);
-  --brandLink: hsl(240, 50%, 50%);
+  --brandContent: hsl(240, 20%, 20%);
+  --brandLink: hsl(240, 50%, 40%);
   --grey50: hsl(240, 20%, 50%);
   --grey80: hsl(240, 20%, 80%);
   --grey96: hsl(240, 20%, 96%);
@@ -43,9 +43,9 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  color: var(--brandText);
   overflow-x: hidden;
   overflow-y: auto;
+  color: var(--brandDark);
 }
 
 /* ------ GLOBAL | LAYOUT ------ */
@@ -62,12 +62,6 @@ h1 {
 }
 p {
   margin: 0;
-}
-.light-weight {
-  font-weight: 200;
-}
-.bold-weight {
-  font-weight: 500;
 }
 
 /* ------ GLOBAL | SCALING ------ */
@@ -99,7 +93,6 @@ li {
 a {
   text-decoration: none;
   transition-duration: 0.2s;
-  color: var(--brandLink);
   cursor: pointer;
 }
 .icon-link {
