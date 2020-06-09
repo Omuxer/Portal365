@@ -1,4 +1,4 @@
 **Login page**
 
-- [login.html](website/login.html)
-- [login-ar.html](website/login-ar.html)
+- [login](web/www.portal365.org/login.html)
+- [ar/login](web/www.portal365.org/ar/login.html)
