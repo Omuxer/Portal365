@@ -8,7 +8,6 @@
   --grey50: hsl(240, 20%, 50%);
   --grey80: hsl(240, 20%, 80%);
   --grey96: hsl(240, 20%, 96%);
-  --lightCyan: hsl(200, 100%, 96%);
 
   /* ------ VARIABLES | ELEMENT SIZES ------ */
   --xxsmall: 0.25rem;
@@ -63,7 +62,15 @@ h1 {
 p {
   margin: 0;
 }
-
+.ar-font {
+  font-family: "Tajawal", tahoma;
+}
+.en-font {
+  font-family: "DM Sans", sans-serif;
+}
+.page-title {
+  font-size: var(--large);
+}
 /* ------ GLOBAL | SCALING ------ */
 /* TEXT SCALING */
 .t-small {
@@ -95,12 +102,6 @@ a {
   transition-duration: 0.2s;
   cursor: pointer;
   color: var(--brandDark);
-}
-.icon-link {
-  display: flex;
-}
-.icon-link > :nth-child(odd) {
-  margin-right: var(--xxsmall);
 }
 .inactive {
   color: var(--grey80);
@@ -161,10 +162,7 @@ button {
   background-color: white;
 }
 
-/* ------ GLOBAL | ICONS ------ */
-i {
-  font-style: normal;
-}
+
 /* ------ GLOBAL | SVG ------ */
 .svg {
   background-repeat: no-repeat;

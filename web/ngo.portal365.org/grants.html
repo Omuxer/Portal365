@@ -2,12 +2,8 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/system.css">
-        <link rel="stylesheet" href="../css/icons.css">
+        <!-- JQurey script to include header and footer-->
+        <script src="../js/jquery-3.5.1.min.js"></script>
         <title>Grants</title>
     </head>
 
@@ -16,12 +12,12 @@
         <main>
             <section id="content-navigation">
                 <div class="flex">
-                    <a class="flex label grey50" href="home.html"><i
-                            class="icon e-regular margin-right-xxsmall home"></i>Home&nbsp;|&nbsp;
+                    <a class="flex label grey50" href="home.html"><span
+                            class="icon e-regular margin-right-xxsmall home"></span>Home&nbsp;/&nbsp;
                     </a> <span class="inactive">Grants</span>
                 </div>
                 <div class="flex">
-                    <i class="icon e-medium margin-right-xsmall grants-filled "></i>
+                    <span class="icon e-medium margin-right-xsmall grants-filled "></span>
                     <h1 class="margin-up-and-down-large page-title">Grants</h1>
                 </div>
             </section>
@@ -86,17 +82,17 @@
                     </div>
 
                 </div>
-                <input type=" text" placeholder="Search">
+                <spannput type=" text" placeholder="Search">
             </section>
             <section id="content-wrapper">
                 <table class="table-flex">
                     <tbody>
                         <tr>
                             <td class="icon e-regular grants-filled"></td>
-                            <td class="table-header"><a><i class="order">➜</a></i>Grant Title</td>
+                            <td class="table-header"><a><span class="order">➜</a></span>Grant Title</td>
                             <td class="table-header">Program</td>
-                            <td class="table-header"><a><i class="order">➜</a></i>Size</a></td>
-                            <td class="table-header"><a><i class="order">➜</a></i>Deadline</a></td>
+                            <td class="table-header"><a><span class="order">➜</a></span>Size</a></td>
+                            <td class="table-header"><a><span class="order">➜</a></span>Deadline</a></td>
                             <td class="table-header">Donor</td>
                             <td>&nbsp;</td>
                         </tr>
@@ -107,7 +103,7 @@
                                     security</a></td>
                             <td>$500,000</td>
                             <td>1/8/2020</td>
-                            <td>Unicef</td>
+                            <td><a>Unicef</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
@@ -117,7 +113,7 @@
                             <td>$1,000,000
                             </td>
                             <td>5/9/2020</td>
-                            <td>Ocha</td>
+                            <td><a>Ocha</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
@@ -127,7 +123,7 @@
                                     security</a></td>
                             <td>€70,000</td>
                             <td>31/10/2020</td>
-                            <td>FAO</td>
+                            <td><a>FAO</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
@@ -136,7 +132,7 @@
                             <td class="tag-childern margin-children-right-xsmall"><a>Capacity Bulding</a></td>
                             <td>€1,250,000</td>
                             <td>23/12/2020</td>
-                            <td>UNDP</td>
+                            <td><a>UNDP</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
@@ -146,7 +142,7 @@
                                     security</a></td>
                             <td>£1,000,000</td>
                             <td>31/10/2020</td>
-                            <td>FAO</td>
+                            <td><a>FAO</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
@@ -155,7 +151,46 @@
                             <td class="tag-childern margin-children-right-xsmall"><a>Capacity Bulding</a></td>
                             <td>€1,000,000</td>
                             <td>23/12/2020</td>
-                            <td>UNDP</td>
+                            <td><a>UNDP</a></td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular grants"></td>
+                            <td><a>United States Agency for International Development</a> </td>
+                            <td class="tag-childern margin-children-right-xsmall"><a>Education</a><a>Food
+                                    security</a></td>
+                            <td>$500,000</td>
+                            <td>1/8/2020</td>
+                            <td><a>Unicef</a></td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular grants"></td>
+                            <td><a>Family Planning</a></td>
+                            <td class="tag-childern margin-children-right-xsmall"><a>Protection</a></td>
+                            <td>$1,000,000
+                            </td>
+                            <td>5/9/2020</td>
+                            <td><a>Ocha</a></td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular grants"></td>
+                            <td><a>Active Citizens Fund</a></td>
+                            <td class="tag-childern margin-children-right-xsmall"><a>Shelter</a><a>Food
+                                    security</a></td>
+                            <td>€70,000</td>
+                            <td>31/10/2020</td>
+                            <td><a>FAO</a></td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular grants"></td>
+                            <td><a>National Institutes of Health</a></td>
+                            <td class="tag-childern margin-children-right-xsmall"><a>Capacity Bulding</a></td>
+                            <td>€1,250,000</td>
+                            <td>23/12/2020</td>
+                            <td><a>UNDP</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                     </tbody>
@@ -172,12 +207,10 @@
         </main>
 
         <!-- JQurey script to include header and footer-->
-        <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-            </script>
         <script>
             $(function () {
-                $("#header").load("modules/header.html");
+                $("head").load("modules/head.html");
+                $("header").load("modules/header.html");
             });
         </script>
     </body>

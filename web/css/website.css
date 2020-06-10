@@ -22,6 +22,10 @@
 | NO SPACES BETWEEN RULE SETS                         |
 ******************************************************/
 
+/* ====== WEBSITE VARIABLES ====== */
+:root {
+  --lightCyan: hsl(200, 100%, 96%);
+}
 /* ====== WEBSITE GLOBAL ====== */
 
 /* ------ WEBSITE GLOBAL | TYPOGRAPHY ------ */

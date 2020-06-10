@@ -21,7 +21,11 @@
 /* ====== SYSTEM GLOBAL ====== */
 
 /* ------ SYSTEM GLOBAL | TYPOGRAPHY ------ */
+html {
+  overflow: hidden;
+}
 body {
+  overflow: auto;
   font-size: var(--t-small);
   font-family: "DM Sans", sans-serif, tahoma;
 }
@@ -30,15 +34,6 @@ button,
 .select-menu {
   font-size: var(--t-small);
   font-family: "DM Sans", sans-serif, tahoma;
-}
-.ar-font {
-  font-family: "Tajawal", tahoma;
-}
-.en-font {
-  font-family: "DM Sans", sans-serif;
-}
-.page-title {
-  font-size: var(--large);
 }
 
 /* ------ SYSTEM GLOBAL | LAYOUT ------ */
@@ -190,22 +185,13 @@ tr > :last-child {
   position: relative;
   background-color: white;
 }
-.icon {
-  display: inline-block;
-}
-.main-nav {
-  display: flex;
-}
-.logo-header {
+.header-logo {
   flex-basis: 15%;
 }
-.nav-header {
+.header-nav {
   flex-basis: 45%;
 }
-.nav-header > * {
-  margin-right: var(--small);
-}
-.info-header {
+.header-actions {
   flex-basis: 25%;
 }
 .account-name {
