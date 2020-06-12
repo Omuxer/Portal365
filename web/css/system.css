@@ -40,23 +40,46 @@ button,
 main {
   padding: var(--regular);
 }
+
+.overview-wrapper {
+  border-radius: var(--xsmall);
+  background-color: var(--brandBright);
+  margin-bottom: var(--medium);
+  padding: var(--regular);
+  grid-gap: var(--xsmall);
+  background-color: var(--grey96);
+}
+.overview-wrapper select {
+  background-color: white;
+}
+
+.overview-wrapper > * {
+  flex-grow: 1;
+}
+.overview-wrapper select {
+  width: 80%;
+  margin-bottom: 0;
+}
 .actions-bar {
   align-items: flex-end;
 }
 .filter-bar {
-  flex-basis: 60%;
   align-items: flex-end;
 }
 .filter-bar > * {
   flex-basis: 100%;
 }
-
-/* ------ SYSTEM GLOBAL | FORM ELEMENTS ------ */
-input,
-button,
-select {
-  padding: var(--xsmall) var(--small);
-  margin-bottom: var(--regular);
+.stick-to-bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  border-top-right-radius: var(--regular);
+  border-top-left-radius: var(--regular);
+  background-color: var(--brandDark);
+  padding: var(--regular) var(--regular);
+}
+.stick-to-bottom button {
+  margin-bottom: 0;
 }
 /* ------ SYSTEM GLOBAL | TABLES ------ */
 table {
@@ -90,12 +113,6 @@ tbody > :first-child {
   position: relative;
 } */
 .order {
-  text-decoration: none;
-  display: inline-block;
-  position: absolute;
-  left: -0.5rem;
-  font-size: var(--t-xsmall);
-  transform: rotate(-90deg);
   color: var(--grey80);
 }
 tr {
@@ -104,7 +121,7 @@ tr {
 }
 tr > td {
   display: inline-block; /*To override the initial value of table-cell*/
-  padding: 0 var(--xxsmall);
+  padding: 0 var(--xsmall);
 }
 tr > :nth-child(2) {
   width: 20%;
@@ -125,23 +142,26 @@ tr > :last-child {
   text-align: center;
   width: 2%;
 }
+td > a {
+  cursor: pointer;
+}
+
+/* ------ SYSTEM GLOBAL | TAGS  ------ */
 .tag-childern > * {
   background-color: var(--grey96);
   border-radius: var(--large);
-  padding: var(--xxsmall) var(--small);
+  padding: var(--xxsmall) var(--xsmall);
   display: inline-block;
-  border: 2px solid white;
-  margin: 0;
+  margin: 2px;
 }
-
-/* ------ SYSTEM GLOBAL | SEARCH  ------ */
 .number-childern {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: var(--regular);
 }
-.number-childern > * {
+.number-childern > *,
+.number {
   height: var(--large);
   width: var(--large);
   border-radius: 50%;
@@ -152,27 +172,9 @@ tr > :last-child {
 .number-childern > :first-child,
 .number-childern > *:hover,
 .number-childern > *:active {
-  background-color: var(--brandGreen);
+  background-color: var(--brandBright);
   color: white;
-  border-color: var(--brandGreen);
-}
-/* ------ SYSTEM GLOBAL | MEDIA QUIRIES ------ */
-
-@media only screen and (min-width: 1024px) {
-  a:hover {
-    color: var(--brandGreen);
-  }
-  button:hover {
-    filter: brightness(1.05);
-  }
-}
-@media only screen and (min-width: 1200px) {
-  html,
-  input,
-  button,
-  select {
-    font-size: 1.2vw;
-  }
+  border-color: var(--brandBright);
 }
 
 /* ====== MODULES ====== */
@@ -186,16 +188,15 @@ tr > :last-child {
   background-color: white;
 }
 .header-logo {
-  flex-basis: 15%;
+  flex-grow: 2;
+  justify-content: flex-start;
 }
 .header-nav {
-  flex-basis: 45%;
+  flex-grow: 3;
 }
 .header-actions {
-  flex-basis: 25%;
-}
-.account-name {
-  font-size: var(--t-xsmall);
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 .account-menu {
   padding: var(--xxsmall);
@@ -207,10 +208,10 @@ tr > :last-child {
     background-color: var(--grey96);
   }
   .order:hover {
-    color: var(--brandGreen);
+    color: var(--brandBright);
   }
   .tag-childern > *:hover {
-    background-color: var(--brandGreen);
+    background-color: var(--brandBright);
     color: white;
   }
 }

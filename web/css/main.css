@@ -1,13 +1,15 @@
 /*  ====== VARIABLES ======  */
 :root {
   /* ------ VARIABLES | COLORS ------ */
-  --brandGreen: #00cc99;
+  --brandBright: #00cc99;
   --brandDark: hsl(240, 100%, 10%);
   --brandContent: hsl(240, 20%, 20%);
-  --brandLink: hsl(240, 50%, 40%);
+  --brandLink: hsl(240, 40%, 40%);
   --grey50: hsl(240, 20%, 50%);
   --grey80: hsl(240, 20%, 80%);
+  --grey90: hsl(240, 20%, 90%);
   --grey96: hsl(240, 20%, 96%);
+  --neutral: hsl(240, 10%, 50%);
 
   /* ------ VARIABLES | ELEMENT SIZES ------ */
   --xxsmall: 0.25rem;
@@ -22,7 +24,9 @@
   --t-xsmall: 0.75rem;
   --t-small: 0.875rem;
   --t-regular: 1rem;
-  --t-medium: 1.5rem;
+  --t-medium: 1.25rem;
+  --t-large: 1.5rem;
+  --t-xlarge: 2rem;
 }
 
 /*  ====== GLOBAL ======  */
@@ -31,7 +35,7 @@
   box-sizing: border-box;
 }
 *:focus {
-  outline: 2px solid var(--brandGreen);
+  outline: 2px solid var(--brandBright);
 }
 html {
   font-size: 16px;
@@ -47,20 +51,43 @@ body {
   color: var(--brandDark);
 }
 
+/* ------ GLOBAL | RESETTING ------ */
+h1,
+h2,
+h3,
+p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-bottom: 0;
+  margin: 0;
+}
+
 /* ------ GLOBAL | LAYOUT ------ */
+body {
+  position: relative;
+}
 main,
 section {
   width: inherit;
 }
 
+/* ------ GLOBAL | COLORS ------ */
+.green {
+  color: var(--brandBright);
+}
+
 /* ------ GLOBAL | TYPOGRAPHY ------ */
 h1 {
   margin-top: 0;
-  font-size: var(--t-medium);
-  font-weight: 500;
+  font-size: var(--t-large);
+  font-weight: 600;
 }
-p {
-  margin: 0;
+h2 {
+  font-size: var(--t-medium);
+  font-weight: 600;
+}
+.bold {
+  font-weight: 600;
 }
 .ar-font {
   font-family: "Tajawal", tahoma;
@@ -68,16 +95,40 @@ p {
 .en-font {
   font-family: "DM Sans", sans-serif;
 }
-.page-title {
-  font-size: var(--large);
+.content-title {
+  border-bottom: 1px solid var(--grey80);
 }
+.content-text {
+  font-size: var(--t-regular);
+}
+.content-text p {
+  margin-bottom: var(--t-regular);
+}
+.pushing-article-bottom {
+  padding-bottom: 3.375rem; /* This prevents article from going under the absolute bottom buttons*/
+}
+
 /* ------ GLOBAL | SCALING ------ */
 /* TEXT SCALING */
+/* This is to alter text size in HTML with classes*/
+.t-xsmall {
+  font-size: var(--t-xsmall);
+}
 .t-small {
   font-size: var(--t-small);
 }
+.t-regular {
+  font-size: var(--t-regular);
+}
+.t-xlarge {
+  font-size: var(--t-xlarge);
+}
 /* ELEMENTS SCALING*/
-/* This is crucial for empty divs with background-image*/
+/* This is crucial for empty divs with background-image or to scale items up and down*/
+.e-small {
+  width: var(--small);
+  height: var(--small);
+}
 .e-regular {
   width: var(--regular);
   height: var(--regular);
@@ -86,21 +137,21 @@ p {
   width: var(--medium);
   height: var(--medium);
 }
+.e-large {
+  width: var(--large);
+  height: var(--large);
+}
 
 /* ------ GLOBAL | DISPLAY ------ */
 .block {
   display: block;
 }
 /* ------ GLOBAL | LISTS ------ */
-li {
-  list-style: none;
-}
 
 /* ------ GLOBAL | LINKS ------ */
 a {
   text-decoration: none;
   transition-duration: 0.2s;
-  cursor: pointer;
   color: var(--brandDark);
 }
 .inactive {
@@ -108,20 +159,14 @@ a {
 }
 
 /* ------ GLOBAL | IMAGES ------ */
-.medium-avatar {
-  height: var(--medium);
-  width: var(--medium);
-  border-radius: 50%;
-}
 
 /* ------ GLOBAL | FORM ELEMENTS ------ */
 form {
   display: flex;
   flex-direction: column;
 }
-label,
-.label {
-  font-size: var(--t-small);
+label {
+  font-size: var(--t-xsmall);
 }
 .label-input-div {
   display: flex;
@@ -132,41 +177,58 @@ button,
 select {
   border-style: unset;
   border-radius: var(--xsmall);
-  padding: var(--small);
+  padding: var(--xsmall) var(--small);
   margin-bottom: var(--regular);
   color: var(--brandDark);
-}
-input {
   background-color: var(--grey96);
+  border-width: 0;
 }
 input::placeholder {
-  color: var(--grey80);
+  color: var(--brandDark);
+  font-size: var(--t-small);
 }
 input[type="checkbox"] {
   cursor: pointer;
   margin-bottom: 0;
 }
+select {
+  width: 100%; /* This prevents selct element from streching based on its content */
+}
+select option {
+  background-color: white;
+  height: 2rem;
+}
 button {
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   transition-duration: 0.2s;
+  border-radius: var(--medium);
+}
+.filled {
+  color: white;
+  background-color: var(--brandBright);
 }
 .primary {
-  color: white;
-  background-color: var(--brandGreen);
-}
-.select-menu {
-  background-color: var(--grey96);
-}
-.select-menu option {
+  color: var(--brandDark);
+  border-radius: var(--medium);
   background-color: white;
 }
+.neutral {
+  border-radius: var(--medium);
+  color: var(--neutral);
+}
 
-
-/* ------ GLOBAL | SVG ------ */
-.svg {
+/* ------ GLOBAL | ICONS AND VECTORS ------ */
+/* This is essentil for the elements to show up as they don't have initial raelestate on the screen*/
+.icon,
+.vector {
+  display: flex;
   background-repeat: no-repeat;
-  height: 100%;
+}
+.icon {
+  margin-right: var(--xxsmall);
+}
+.vector {
   width: 100%;
 }
 
@@ -226,10 +288,23 @@ button {
 /* ------ GLOBAL | FLEX ------ */
 .flex {
   display: flex;
-  align-items: center;
 }
 .space-between {
   justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.vertical-space-between {
+  justify-content: space-between;
+}
+/* GRID------ GLOBAL | FLEX ------ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* ------ GLOBAL | CHILDERN MANAGEMENT ------ */
@@ -262,9 +337,9 @@ button {
 /* ------ GLOBAL | MEDIA QUIRIES ------ */
 @media only screen and (min-width: 1024px) {
   a:hover {
-    color: var(--brandGreen);
+    color: var(--brandBright);
   }
-  button:hover {
+  .filled:hover {
     filter: brightness(1.05);
   }
 }
@@ -275,4 +350,13 @@ button {
   select {
     font-size: 1.2vw;
   }
+}
+.primary:hover {
+  background-color: var(--brandBright);
+  color: white;
+  border-color: var(--brandBright);
+}
+.neutral:hover {
+  color: white;
+  background-color: var(--neutral);
 }

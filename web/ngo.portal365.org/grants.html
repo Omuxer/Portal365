@@ -7,20 +7,27 @@
         <title>Grants</title>
     </head>
 
-    <body id="grants">
+    <body class="grants-body">
         <header id="header"></header>
         <main>
+
             <section id="content-navigation">
                 <div class="flex">
-                    <a class="flex label grey50" href="home.html"><span
-                            class="icon e-regular margin-right-xxsmall home"></span>Home&nbsp;/&nbsp;
-                    </a> <span class="inactive">Grants</span>
-                </div>
-                <div class="flex">
-                    <span class="icon e-medium margin-right-xsmall grants-filled "></span>
-                    <h1 class="margin-up-and-down-large page-title">Grants</h1>
+                    <a class="flex sibling" href="home.html"><span class="icon e-regular home">&nbsp;</span>
+                        Home</a>&nbsp;/&nbsp;
+                    <span class="inactive">Grants</span>
                 </div>
             </section>
+
+            <section id="pageTitle" class="flex column  margin-up-and-down-large">
+                <div class="flex ">
+                    <span class="icon e-medium margin-right-xsmall grants-filled "></span>
+                    <div>
+                        <h1 class="page-title">Grants</h1>
+                    </div>
+                </div>
+            </section>
+
             <section id="actionsBar" class="flex space-between actions-bar">
                 <div class="flex margin-children-right-xsmall filter-bar">
                     <div class="label-input-div">
@@ -82,120 +89,124 @@
                     </div>
 
                 </div>
-                <spannput type=" text" placeholder="Search">
+                <input type=" text" placeholder="Search">
             </section>
+
             <section id="content-wrapper">
                 <table class="table-flex">
                     <tbody>
                         <tr>
                             <td class="icon e-regular grants-filled"></td>
-                            <td class="table-header"><a><span class="order">➜</a></span>Grant Title</td>
+                            <td class="table-header"><a class="order">⥯</a>Grant Title</td>
                             <td class="table-header">Program</td>
-                            <td class="table-header"><a><span class="order">➜</a></span>Size</a></td>
-                            <td class="table-header"><a><span class="order">➜</a></span>Deadline</a></td>
+                            <td class="table-header"><a class="order">⥯</a>Size</a></td>
+                            <td class="table-header"><a class="order">⥯</a>Deadline</a></td>
                             <td class="table-header">Donor</td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>United States Agency for International Development</a> </td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Education</a><a>Food
+                            <td><a href="grants-page.html">COVID-19 Global South Artificial Intelligence
+                                    and Data
+                                    Innovation Program</a> </td>
+                            <td class="tag-childern "><a>Health</a><a>Food
                                     security</a></td>
                             <td>$500,000</td>
                             <td>1/8/2020</td>
-                            <td><a>Unicef</a></td>
+                            <td><a href="#donorsDetails">IDRC</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>Family Planning</a></td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Protection</a></td>
+                            <td><a href="#grantDetails">Family Planning</a></td>
+                            <td class="tag-childern "><a>Protection</a></td>
                             <td>$1,000,000
                             </td>
                             <td>5/9/2020</td>
-                            <td><a>Ocha</a></td>
+                            <td><a href="#donorsDetails">Ocha</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>Active Citizens Fund</a></td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Shelter</a><a>Food
+                            <td><a href="#grantDetails">Active Citizens Fund</a></td>
+                            <td class="tag-childern "><a>Shelter</a><a>Food
                                     security</a></td>
                             <td>€70,000</td>
                             <td>31/10/2020</td>
-                            <td><a>FAO</a></td>
+                            <td><a href="#donorsDetails">FAO</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>National Institutes of Health</a></td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Capacity Bulding</a></td>
+                            <td><a href="#grantDetails">National Institutes of Health</a></td>
+                            <td class="tag-childern "><a>Capacity Bulding</a></td>
                             <td>€1,250,000</td>
                             <td>23/12/2020</td>
-                            <td><a>UNDP</a></td>
+                            <td><a href="#donorsDetails">UNDP</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>Active Citizens Fund</a></td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Shelter</a><a>Food
+                            <td><a href="#grantDetails">Active Citizens Fund</a></td>
+                            <td class="tag-childern "><a>Shelter</a><a>Food
                                     security</a></td>
                             <td>£1,000,000</td>
                             <td>31/10/2020</td>
-                            <td><a>FAO</a></td>
+                            <td><a href="#donorsDetails">FAO</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>National Institutes of Health</a></td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Capacity Bulding</a></td>
+                            <td><a href="#grantDetails">National Institutes of Health</a></td>
+                            <td class="tag-childern "><a>Capacity Bulding</a></td>
                             <td>€1,000,000</td>
                             <td>23/12/2020</td>
-                            <td><a>UNDP</a></td>
+                            <td><a href="#donorsDetails">UNDP</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>United States Agency for International Development</a> </td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Education</a><a>Food
+                            <td><a href="#grantDetails">United States Agency for International Development</a> </td>
+                            <td class="tag-childern "><a>Education</a><a>Food
                                     security</a></td>
                             <td>$500,000</td>
                             <td>1/8/2020</td>
-                            <td><a>Unicef</a></td>
+                            <td><a href="#donorsDetails">Unicef</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>Family Planning</a></td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Protection</a></td>
+                            <td><a href="#grantDetails">Family Planning</a></td>
+                            <td class="tag-childern "><a>Protection</a></td>
                             <td>$1,000,000
                             </td>
                             <td>5/9/2020</td>
-                            <td><a>Ocha</a></td>
+                            <td><a href="#donorsDetails">Ocha</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>Active Citizens Fund</a></td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Shelter</a><a>Food
+                            <td><a href="#grantDetails">Active Citizens Fund</a></td>
+                            <td class="tag-childern "><a>Shelter</a><a>Food
                                     security</a></td>
                             <td>€70,000</td>
                             <td>31/10/2020</td>
-                            <td><a>FAO</a></td>
+                            <td><a href="#donorsDetails">FAO</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                         <tr>
                             <td class="icon e-regular grants"></td>
-                            <td><a>National Institutes of Health</a></td>
-                            <td class="tag-childern margin-children-right-xsmall"><a>Capacity Bulding</a></td>
+                            <td><a href="#grantDetails">National Institutes of Health</a></td>
+                            <td class="tag-childern "><a>Capacity Bulding</a></td>
                             <td>€1,250,000</td>
                             <td>23/12/2020</td>
-                            <td><a>UNDP</a></td>
+                            <td><a href="#donorsDetails">UNDP</a></td>
                             <td><a class="icon e-regular actions">&nbsp;</a></td>
                         </tr>
                     </tbody>
                 </table>
             </section>
+
             <div class="number-childern margin-children-right-small">
                 <a href="#">1</a>
                 <a href="#">2</a>
