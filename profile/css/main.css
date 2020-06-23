@@ -100,6 +100,7 @@ li {
 }
 .arrow {
   animation: move-down 1s ease-out alternate infinite;
+  font-size: .75rem;
 }
 
 figure {
@@ -118,7 +119,8 @@ figure {
 }
 
 .fragment h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
 }
 
 a {
@@ -532,6 +534,23 @@ img {
   .fragment,
   .channels {
     flex-direction: column;
+  }
+  figure {
+    margin-bottom: 2rem;
+  }
+  .fragment p,
+  li {
+    font-size: 1.125rem;
+  }
+  .fragment p,
+  .fragment ul {
+    margin-left: 2.25rem;
+    line-height: 1.5rem;
+  }
+  .ar .fragment p,
+  .fragment ul {
+    margin-right: 2.25rem;
+    margin-left: initial;
   }
   .channel {
     width: 100%;
