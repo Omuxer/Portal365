@@ -302,13 +302,7 @@ li a {
   background-repeat: no-repeat;
   background-position: center;
 }
-.header-logo {
-  background-position: left;
-  flex-basis: 10%;
-  height: 1.5rem;
-  width: 100%;
-  background-repeat: no-repeat;
-}
+
 .ar .header-logo {
   background-position: right;
 }
@@ -364,16 +358,24 @@ li a {
   top: 0;
   z-index: 1;
 }
+.header-logo {
+  background-position: left;
+  height: 1.5rem;
+  flex-basis: 15%;
+  background-repeat: no-repeat;
+  
+}
 .header-nav {
   display: flex;
   justify-content: space-between;
-  flex-basis: 60%;
+  flex-basis: 65%;
 }
 .header-menu {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-basis: 20%;
+  
 }
 .grey {
   color: var(--grey80);
@@ -441,9 +443,10 @@ p {
   margin: 0;
 }
 img {
+  object-fit: contain;
   height: auto;
+  width: 100%;
   max-width: 100%;
-  object-fit: scale-down;
   border-radius: var(--regular);
   transition-duration: 0.3s;
   /*   box-shadow: 0 0 20px var(--grey96);
