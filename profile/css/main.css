@@ -46,6 +46,9 @@ html,
 body {
   height: 100%;
   width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   font-family: "poppins", "Tajawal", tahoma, sans-serif;
   margin: 0;
   padding: 0;
@@ -63,10 +66,11 @@ section:not(:first-child) {
   background-color: #f4f4f4;
   min-height: calc(100vh - 3rem);
   padding: 2rem;
-    padding-top: 3rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
-/*   padding-top: 5rem;
- */}
+  /*   padding-top: 5rem;
+ */
+}
 h1,
 h2,
 h3 {
@@ -138,8 +142,8 @@ button {
   cursor: pointer;
   transition-duration: 0.3s;
 }
-.ar button{
-font-family: "tajawal", tahoma;
+.ar button {
+  font-family: "tajawal", tahoma;
 }
 ul {
   display: inline-block;
@@ -302,7 +306,8 @@ li a {
   background-repeat: no-repeat;
 }
 .ar .header-logo {
-  background-position: right;}
+  background-position: right;
+}
 .logo-icon {
   display: none;
   background-image: url("data:image/svg+xml,%3Csvg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 0A16 16 0 000 16a16.73 16.73 0 002.13 8H8v5.87A16 16 0 0024 2.13 16.73 16.73 0 0016 0zm0 28.81a15.14 15.14 0 01-4.8-.94V24H16a8 8 0 100-16H8v12.81H4.27A12.81 12.81 0 1128 11.2a12.63 12.63 0 01-7.07 16.54A13.08 13.08 0 0116 28.81zm-4.8-8V11.2H16a4.8 4.8 0 014.54 5.07A4.88 4.88 0 0116 20.81z' fill='%230c9'/%3E%3C/svg%3E");
@@ -495,12 +500,12 @@ img {
   margin-left: auto;
 }
 
-
-
-/* 
-@media only screen and (orientation: portrait), (max-width: 1024px) {
+/* @media only screen and (orientation: portrait), (max-width: 1366px) {
   html {
-    font-size: 3vw;
+    font-size: calc(1.5vw + .5rem);
+  }
+  .cover-title {
+    font-size: 4rem;
   }
 } */
 /* @media only screen and (orientation: portrait), (max-width: 760px) {
@@ -603,7 +608,7 @@ img {
     color: white;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1366px) {
   html {
     font-size: 1.125vw;
   }
