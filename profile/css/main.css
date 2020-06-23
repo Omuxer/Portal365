@@ -1,17 +1,18 @@
 /*  --- GLOBAL / VARIABLES ---  */
 :root {
   /* --- GLOBAL / VARIABLES / COLORS / PRIMARY COLORS --- */
-  --brandBright: #00cc99;
-  --brandDark: #000033;
+  --brandBright: hsl(165, 100%, 40%)
+  ;
+  --brandDark: hsl(240, 10%, 10%);;
 
   /* --- GLOBAL / VARIABLES / COLORS / GREY SHADES --- */
-  --brandContent: hsl(240, 20%, 20%);
-  --brandLink: hsl(240, 40%, 40%);
+  --brandContent: hsl(240, 10%, 10%);
+  --brandLink: hsl(240, 10%, 40%);
   --grey50: hsl(240, 10%, 50%);
   --grey80: hsl(240, 10%, 80%);
   --grey90: hsl(240, 10%, 90%);
   --grey96: hsl(240, 10%, 96%);
-  --neutral: hsl(240, 10%, 50%);
+  --neutral: hsl(240, 10%, 60%);
   /* --- GLOBAL / VARIABLES / COLORS / OTHER VARIATIONS --- */
   --bluishWhite: hsl(240, 100%, 98%);
   --lightCyan: hsl(200, 100%, 96%);
@@ -79,11 +80,7 @@ h3 {
 h2 {
   position: relative;
 }
-.border-bottom {
-  display: inline-block;
-  width: fit-content;
-  border-bottom: 4px solid var(--brandDark);
-}
+
 h2 {
   font-size: 2.5rem;
 }
@@ -93,11 +90,15 @@ h3 {
 p {
   margin: 0;
   margin-top: var(--regular);
-  font-size: 1.25rem;
 }
-li {
-  font-size: 1.25rem;
+.fragment li{
+  color: var(--neutral);
 }
+.li-links li, .li-links a{
+  color: var(--brandLink);
+}
+
+
 .arrow {
   animation: move-down 1s ease-out alternate infinite;
   font-size: 0.75rem;
@@ -119,8 +120,29 @@ figure {
 }
 
 .fragment h2 {
-  font-size: 1.75rem;
-  line-height: 2rem;
+  position: relative;
+}
+span + h2 {
+  font-size: 2rem;
+  z-index: 1;
+}
+.fragment h2:after {
+  content: "";
+  background: var(--brandBright);
+  height: 0.25rem;
+  right: 0;
+  bottom: 0.75rem;
+  left: 0;
+  width: 105%;
+  position: absolute;
+  z-index: -1;
+}
+
+.icon-vertical span {
+  background: var(--brandBright);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 a {
@@ -137,25 +159,27 @@ a {
   border-radius: var(--large);
   padding: var(--xsmall) var(--medium);
   color: var(--brandBright);
-  background-color: transparent;
   border-width: 0;
+  background-color: transparent;
   font-family: "poppins", sans-serif;
   font-size: 1.125rem;
-  border: 1px solid var(--brandBright);
   cursor: pointer;
+  border: 2px solid var(--brandBright);
   transition-duration: 0.3s;
   align-self: center;
+}
+.icon-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.icon-vertical span {
+  font-size: 4rem;
 }
 .ar .cover-link {
   font-family: "tajawal", tahoma;
 }
-ul {
-  display: inline-block;
-  color: var(--grey50);
-}
-li a {
-  color: var(--grey50);
-}
+
 
 .icon-link {
   display: flex;
@@ -359,7 +383,7 @@ li a {
   font-size: var(--t-small);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .header-logo {
   background-position: left;
@@ -377,9 +401,6 @@ li a {
   align-items: center;
   justify-content: flex-end;
   flex-basis: 20%;
-}
-.grey {
-  color: var(--grey80);
 }
 
 .account-div {
@@ -424,20 +445,7 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.fragment p,
-.fragment ul {
-  margin-left: 3rem;
-}
-.ar .fragment p,
-.ar .fragment ul {
-  margin-right: 3rem;
-}
-.fragment h2 {
-  margin-left: 0.5rem;
-}
-.ar .fragment h2 {
-  margin-right: 0.5rem;
-}
+
 .find p {
   margin: 0;
 }
@@ -452,34 +460,9 @@ img {
  */
 }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-  grid-gap: 25px;
-  margin-top: var(--large);
-  max-width: 100%;
-  position: relative;
-}
-.large {
-  padding: var(--regular);
-  display: block;
-}
-.features .feature {
-  padding: var(--medium);
-  border-radius: var(--small);
-}
 .title-icon {
   color: var(--brandBright);
   font-size: 1.75rem;
-}
-.feature {
-  transition-duration: 0.3s;
-  cursor: pointer;
-}
-.feature p {
-  color: var(--grey50);
-  font-size: 1.25rem;
-  margin-top: var(--xxsmall);
 }
 
 .channels {
@@ -495,13 +478,15 @@ img {
   background-color: var(--bluishWhite);
   transition-duration: 0.3s;
   margin-bottom: 1rem;
+  color: var(--brandLink);
   border-radius: 1rem;
-  padding: 2rem 1rem;
+  padding: 2rem;
 }
-.channel-icon {
-  line-height: 5rem;
-  margin-right: auto;
-  margin-left: auto;
+
+.fragment p,
+.fragment li {
+  line-height: 1.75rem;
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 30cm) {
@@ -539,56 +524,38 @@ img {
   .header-nav {
     flex-basis: 70%;
   }
+
   .fragment,
   .channels {
     flex-direction: column;
+    align-items: initial;
   }
   figure {
     margin-bottom: 2rem;
   }
-  .fragment p,
-  li {
-    font-size: 1.125rem;
-  }
-  .fragment p,
-  .fragment ul {
-    margin-left: 2.25rem;
-    line-height: 1.5rem;
-  }
-  .ar .fragment p,
-  .fragment ul {
-    margin-right: 2.25rem;
-    margin-left: initial;
-  }
+
   .channel {
     width: 100%;
     text-align: center;
   }
 }
 @media (pointer: fine) {
+  .cover-link:hover {
+    color: white;
+    background: var(--brandBright);
+  }
   .signup:hover {
     filter: brightness(1.1);
     color: white;
   }
-  .feature:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px var(--shadow);
-    color: var(--brandBright);
-    background-color: white;
-  }
   a:hover {
     color: var(--brandBright);
   }
-  .cover-link:hover {
-    color: white;
-    background-color: var(--brandBright);
-  }
   img:hover {
-    transform: scale(1.1);
-    border: 0;
+    transform: scale(1.05);
   }
   .channel:hover {
-    background-color: var(--brandBright);
+    background: var(--brandBright);
     color: white;
   }
 }
