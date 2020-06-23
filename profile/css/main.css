@@ -363,7 +363,6 @@ li a {
   height: 1.5rem;
   flex-basis: 15%;
   background-repeat: no-repeat;
-  
 }
 .header-nav {
   display: flex;
@@ -375,7 +374,6 @@ li a {
   align-items: center;
   justify-content: flex-end;
   flex-basis: 20%;
-  
 }
 .grey {
   color: var(--grey80);
@@ -506,6 +504,12 @@ img {
 }
 
 @media only screen and (max-width: 30cm) {
+  .account-div > :last-child {
+    margin: 0;
+  }
+  .icon-link > :first-child {
+    margin: 0;
+  }
   .cover-title {
     font-size: 8vh;
   }
@@ -522,11 +526,11 @@ img {
     display: initial;
   }
   .signup {
-    padding: var(--xxsmall) var(--regular);
+    padding: var(--xxsmall) var(--xsmall);
   }
   .header-logo,
   .header-menu {
-    flex-basis: 5%;
+    flex-basis: 8%;
   }
   .header-menu > :first-child {
     margin: 0;
@@ -558,9 +562,6 @@ img {
   .channel {
     width: 100%;
     text-align: center;
-  }
-  .icon-link > :first-child {
-    margin: 0;
   }
 }
 @media (pointer: fine) {
