@@ -301,7 +301,7 @@ li a {
 }
 .header-logo {
   background-position: left;
-  flex-basis: 15%;
+  flex-basis: 10%;
   height: 1.5rem;
   width: 100%;
   background-repeat: no-repeat;
@@ -373,7 +373,7 @@ li a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-basis: 15%;
+  flex-basis: 20%;
 }
 .grey {
   color: var(--grey80);
@@ -501,7 +501,7 @@ img {
   margin-left: auto;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 30cm) {
   .cover-title {
     font-size: 4rem;
   }
