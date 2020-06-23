@@ -128,7 +128,7 @@ a {
   transition-duration: 0.3s;
   cursor: pointer;
 }
-button {
+.cover-button {
   border-style: unset;
   border-radius: var(--large);
   padding: var(--xsmall) var(--medium);
@@ -136,12 +136,12 @@ button {
   background-color: transparent;
   border-width: 0;
   font-family: "poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   border: 1px solid var(--brandBright);
   cursor: pointer;
   transition-duration: 0.3s;
 }
-.ar button {
+.ar .cover-button {
   font-family: "tajawal", tahoma;
 }
 ul {
@@ -318,9 +318,6 @@ li a {
   font-size: 6rem;
   font-weight: 800;
   word-wrap: break-word;
-}
-.cover-url {
-  font-size: 2rem;
 }
 .cover-container {
   background-color: var(--lightCyan);
@@ -503,7 +500,13 @@ img {
 
 @media only screen and (max-width: 30cm) {
   .cover-title {
-    font-size: 4rem;
+    font-size: 10vh;
+  }
+  .cover-logo {
+    height: 6vh;
+  }
+  .cover-button {
+    font-size: 3vh;
   }
   .hide {
     display: none;
@@ -535,7 +538,7 @@ img {
     margin: 0;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media (pointer: fine) {
   .signup:hover {
     filter: brightness(1.1);
     color: white;
@@ -549,7 +552,7 @@ img {
   a:hover {
     color: var(--brandBright);
   }
-  button:hover {
+  .cover-button:hover {
     color: white;
     background-color: var(--brandBright);
   }
