@@ -100,7 +100,7 @@ li {
 }
 .arrow {
   animation: move-down 1s ease-out alternate infinite;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 figure {
@@ -590,10 +590,5 @@ img {
 @media only screen and (min-width: 1366px) {
   html {
     font-size: 1.125vw;
-  }
-}
-@media print {
-  section {
-    page-break-after: always;
   }
 }
