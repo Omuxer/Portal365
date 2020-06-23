@@ -162,6 +162,9 @@ li a {
 .icon-link > :first-child {
   margin-right: var(--xsmall);
 }
+.ar .icon-link > :first-child {
+  margin-left: var(--xsmall);
+}
 .signup {
   padding: var(--xxsmall) var(--medium);
   background-color: var(--brandBright);
