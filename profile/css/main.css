@@ -46,7 +46,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "poppins", tahoma, sans-serif;
+  font-family: "poppins", "Tajawal", tahoma, sans-serif;
   margin: 0;
   padding: 0;
   color: var(--brandDark);
@@ -132,11 +132,14 @@ button {
   color: var(--brandBright);
   background-color: transparent;
   border-width: 0;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
   font-size: 1rem;
   border: 1px solid var(--brandBright);
   cursor: pointer;
   transition-duration: 0.3s;
+}
+.ar button{
+font-family: "tajawal", tahoma;
 }
 ul {
   display: inline-block;
@@ -275,13 +278,17 @@ li a {
 .wrapper.cover {
   background-color: transparent;
 }
-
+/* ------ GLOBAL | LOGOS ------ */
+.logo-en {
+  background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 75'%3E%3Cdefs%3E%3Cstyle%3E.cls-2%7Bfill:%23000033%7D%3C/style%3E%3C/defs%3E%3Cpath d='M37.5 0A37.49 37.49 0 0 0 5 56.25h13.75V70A37.5 37.5 0 1 0 37.5 0zm0 67.5a30 30 0 0 1-11.25-2.18v-9.07H37.5a18.75 18.75 0 0 0 0-37.5H18.75v30H9.68A30 30 0 1 1 37.5 67.5zM26.25 48.75v-22.5H37.5a11.25 11.25 0 0 1 0 22.5z' fill='%2300cc99'/%3E%3Cpath class='cls-2' d='M287.5 15h7.5v45h-7.5zM205 22.5h-7.5V60h7.5V41.25A11.25 11.25 0 0 1 216.25 30v-7.5A18.69 18.69 0 0 0 205 26.25zM275 26.25a18.75 18.75 0 1 0 0 30V60h7.5V22.5H275zM263.75 52.5A11.25 11.25 0 1 1 275 41.25a11.25 11.25 0 0 1-11.25 11.25zM131.25 15H105v45h7.5v-7.5h18.75a18.75 18.75 0 0 0 0-37.5zm0 30H112.5V22.5h18.75a11.25 11.25 0 0 1 0 22.5zM173.75 22.5a18.75 18.75 0 1 0 18.75 18.75 18.74 18.74 0 0 0-18.75-18.75zm0 30A11.25 11.25 0 1 1 185 41.25a11.25 11.25 0 0 1-11.25 11.25zM228.75 41.25V30h7.5v-7.5h-7.5V15h-7.5v26.25A18.74 18.74 0 0 0 240 60v-7.5a11.25 11.25 0 0 1-11.25-11.25zM350.1 30l8.69-15H350l-13 22.5a15 15 0 1 0 13.1-7.5zm-.1 22.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5zM330 15h-27.5v7.5h14.41l-8.69 15H315a7.5 7.5 0 1 1-7.5 7.5H300a15 15 0 1 0 20.67-13.89L330 15zM385.12 30h-4.94l2.17-7.5h15.15V15h-21L370 37.5h15a7.5 7.5 0 1 1-7.5 7.5H370a15 15 0 1 0 15.12-15z'/%3E%3C/svg%3E");
+}
+.logo-ar {
+  background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 37.5'%3E%3Cdefs%3E%3Cstyle%3E.cls-2%7Bfill:%23003%7D%3C/style%3E%3C/defs%3E%3Cpath d='M181.25 0A18.76 18.76 0 00165 28.13h6.87V35a18.75 18.75 0 109.37-35zm0 33.75a15 15 0 01-5.62-1.09v-4.53h5.62a9.38 9.38 0 100-18.75h-9.37v15h-4.54a15 15 0 1113.91 9.37zm-5.62-9.37V13.13h5.62a5.63 5.63 0 110 11.25z' fill='%230c9'/%3E%3Cpath class='cls-2' d='M103.75 23.75a5.63 5.63 0 01-5.62 5.63v3.75a9.38 9.38 0 009.37-9.38V11.88h-3.75zm-4.37-11.87h-3.75v5.62A5.63 5.63 0 0190 23.13h-8.75V4.38H77.5v22.5H90a9.38 9.38 0 009.38-9.38zM71.25 23.13h-9.37a5.63 5.63 0 110-11.25V8.13a9.38 9.38 0 100 18.75H75V4.38h-3.75zM143.75 10v7.5a5.63 5.63 0 01-5.62 5.63h-10.46l.59-1.19a9.36 9.36 0 10-8.26 4.94 10.39 10.39 0 001.68-.16l-3.18 6.41h4.19l3.11-6.25h12.33a9.38 9.38 0 009.37-9.38V10zM120 23.13a5.63 5.63 0 115.63-5.63 5.62 5.62 0 01-5.63 5.63z'/%3E%3Ccircle class='cls-2' cx='135.63' cy='30.63' r='1.88'/%3E%3Ccircle class='cls-2' cx='97.5' cy='8.13' r='1.88'/%3E%3Ccircle class='cls-2' cx='91.88' cy='8.13' r='1.88'/%3E%3Cpath class='cls-2' d='M25.05 11.88l4.34-7.5H25l-6.5 11.25a7.5 7.5 0 1010.25-2.75 7.41 7.41 0 00-3.7-1zM25 23.13a3.75 3.75 0 113.75-3.75A3.75 3.75 0 0125 23.13zM15 4.38H1.25v3.75h7.2l-4.34 7.5H7.5a3.75 3.75 0 11-3.75 3.75H0a7.5 7.5 0 1010.34-6.95zm27.56 7.5h-2.47l1.09-3.75h7.57V4.38H38.26L35 15.63h7.5a3.75 3.75 0 11-3.75 3.75H35a7.5 7.5 0 107.56-7.5z'/%3E%3C/svg%3E");
+}
 .cover-logo {
   height: 2.5rem;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 75'%3E%3Cdefs%3E%3Cstyle%3E.cls-2%7Bfill:%23000033%7D%3C/style%3E%3C/defs%3E%3Cpath d='M37.5 0A37.49 37.49 0 0 0 5 56.25h13.75V70A37.5 37.5 0 1 0 37.5 0zm0 67.5a30 30 0 0 1-11.25-2.18v-9.07H37.5a18.75 18.75 0 0 0 0-37.5H18.75v30H9.68A30 30 0 1 1 37.5 67.5zM26.25 48.75v-22.5H37.5a11.25 11.25 0 0 1 0 22.5z' fill='%2300cc99'/%3E%3Cpath class='cls-2' d='M287.5 15h7.5v45h-7.5zM205 22.5h-7.5V60h7.5V41.25A11.25 11.25 0 0 1 216.25 30v-7.5A18.69 18.69 0 0 0 205 26.25zM275 26.25a18.75 18.75 0 1 0 0 30V60h7.5V22.5H275zM263.75 52.5A11.25 11.25 0 1 1 275 41.25a11.25 11.25 0 0 1-11.25 11.25zM131.25 15H105v45h7.5v-7.5h18.75a18.75 18.75 0 0 0 0-37.5zm0 30H112.5V22.5h18.75a11.25 11.25 0 0 1 0 22.5zM173.75 22.5a18.75 18.75 0 1 0 18.75 18.75 18.74 18.74 0 0 0-18.75-18.75zm0 30A11.25 11.25 0 1 1 185 41.25a11.25 11.25 0 0 1-11.25 11.25zM228.75 41.25V30h7.5v-7.5h-7.5V15h-7.5v26.25A18.74 18.74 0 0 0 240 60v-7.5a11.25 11.25 0 0 1-11.25-11.25zM350.1 30l8.69-15H350l-13 22.5a15 15 0 1 0 13.1-7.5zm-.1 22.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5zM330 15h-27.5v7.5h14.41l-8.69 15H315a7.5 7.5 0 1 1-7.5 7.5H300a15 15 0 1 0 20.67-13.89L330 15zM385.12 30h-4.94l2.17-7.5h15.15V15h-21L370 37.5h15a7.5 7.5 0 1 1-7.5 7.5H370a15 15 0 1 0 15.12-15z'/%3E%3C/svg%3E");
-
   background-position: center;
 }
 .header-logo {
@@ -290,15 +297,15 @@ li a {
   height: 1.5rem;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 75'%3E%3Cdefs%3E%3Cstyle%3E.cls-2%7Bfill:%23000033%7D%3C/style%3E%3C/defs%3E%3Cpath d='M37.5 0A37.49 37.49 0 0 0 5 56.25h13.75V70A37.5 37.5 0 1 0 37.5 0zm0 67.5a30 30 0 0 1-11.25-2.18v-9.07H37.5a18.75 18.75 0 0 0 0-37.5H18.75v30H9.68A30 30 0 1 1 37.5 67.5zM26.25 48.75v-22.5H37.5a11.25 11.25 0 0 1 0 22.5z' fill='%2300cc99'/%3E%3Cpath class='cls-2' d='M287.5 15h7.5v45h-7.5zM205 22.5h-7.5V60h7.5V41.25A11.25 11.25 0 0 1 216.25 30v-7.5A18.69 18.69 0 0 0 205 26.25zM275 26.25a18.75 18.75 0 1 0 0 30V60h7.5V22.5H275zM263.75 52.5A11.25 11.25 0 1 1 275 41.25a11.25 11.25 0 0 1-11.25 11.25zM131.25 15H105v45h7.5v-7.5h18.75a18.75 18.75 0 0 0 0-37.5zm0 30H112.5V22.5h18.75a11.25 11.25 0 0 1 0 22.5zM173.75 22.5a18.75 18.75 0 1 0 18.75 18.75 18.74 18.74 0 0 0-18.75-18.75zm0 30A11.25 11.25 0 1 1 185 41.25a11.25 11.25 0 0 1-11.25 11.25zM228.75 41.25V30h7.5v-7.5h-7.5V15h-7.5v26.25A18.74 18.74 0 0 0 240 60v-7.5a11.25 11.25 0 0 1-11.25-11.25zM350.1 30l8.69-15H350l-13 22.5a15 15 0 1 0 13.1-7.5zm-.1 22.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5zM330 15h-27.5v7.5h14.41l-8.69 15H315a7.5 7.5 0 1 1-7.5 7.5H300a15 15 0 1 0 20.67-13.89L330 15zM385.12 30h-4.94l2.17-7.5h15.15V15h-21L370 37.5h15a7.5 7.5 0 1 1-7.5 7.5H370a15 15 0 1 0 15.12-15z'/%3E%3C/svg%3E");
 }
+.ar .header-logo {
+  background-position: right;}
 .logo-icon {
   display: none;
   background-image: url("data:image/svg+xml,%3Csvg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 0A16 16 0 000 16a16.73 16.73 0 002.13 8H8v5.87A16 16 0 0024 2.13 16.73 16.73 0 0016 0zm0 28.81a15.14 15.14 0 01-4.8-.94V24H16a8 8 0 100-16H8v12.81H4.27A12.81 12.81 0 1128 11.2a12.63 12.63 0 01-7.07 16.54A13.08 13.08 0 0116 28.81zm-4.8-8V11.2H16a4.8 4.8 0 014.54 5.07A4.88 4.88 0 0116 20.81z' fill='%230c9'/%3E%3C/svg%3E");
 }
 
 .cover-title {
-  font-family: "poppins", sans-serif;
   font-size: 6rem;
   font-weight: 800;
   word-wrap: break-word;
@@ -375,6 +382,9 @@ li a {
 .account-div > :last-child {
   margin-left: var(--xsmall);
 }
+.ar .account-div > :last-child {
+  margin-right: var(--xsmall);
+}
 
 .avatar {
   border-radius: var(--medium);
@@ -408,8 +418,15 @@ p {
 .fragment ul {
   margin-left: 3rem;
 }
+.ar .fragment p,
+.ar .fragment ul {
+  margin-right: 3rem;
+}
 .fragment h2 {
   margin-left: 0.5rem;
+}
+.ar .fragment h2 {
+  margin-right: 0.5rem;
 }
 .reach p {
   margin: 0;
@@ -474,6 +491,8 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
+
+
 
 /* 
 @media only screen and (orientation: portrait), (max-width: 1024px) {
