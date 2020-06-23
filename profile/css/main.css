@@ -161,7 +161,9 @@ li a {
   width: 2rem;
   font-size: 2rem;
 }
-
+.show {
+  display: none;
+}
 .icon-link > :first-child {
   margin-right: var(--xsmall);
 }
@@ -435,7 +437,7 @@ p {
 .ar .fragment h2 {
   margin-right: 0.5rem;
 }
-.reach p {
+.find p {
   margin: 0;
 }
 img {
@@ -580,6 +582,40 @@ img {
   }
 }*/
 
+@media only screen and (max-width: 760px) {
+  .cover-title {
+    font-size: 4rem;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: initial;
+  }
+  .signup {
+    padding: var(--xxsmall) var(--regular);
+  }
+  .header-logo,
+  .header-menu {
+    flex-basis: 5%;
+  }
+  .header-menu > :first-child {
+    margin: 0;
+  }
+  .header-nav {
+    flex-basis: 70%;
+  }
+  .fragment,
+  .channels {
+    flex-direction: column;
+  }
+  .channel {
+    width: 100%;
+  }
+  .icon-link > :first-child {
+    margin: 0;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .signup:hover {
     filter: brightness(1.1);
