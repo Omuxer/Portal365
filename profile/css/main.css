@@ -131,7 +131,8 @@ a {
   transition-duration: 0.3s;
   cursor: pointer;
 }
-.cover-button {
+.cover-link {
+  display: block;
   border-style: unset;
   border-radius: var(--large);
   padding: var(--xsmall) var(--medium);
@@ -143,8 +144,9 @@ a {
   border: 1px solid var(--brandBright);
   cursor: pointer;
   transition-duration: 0.3s;
+  align-self: center;
 }
-.ar .cover-button {
+.ar .cover-link {
   font-family: "tajawal", tahoma;
 }
 ul {
@@ -266,6 +268,7 @@ li a {
 .cover-wrapper {
   padding: 2rem;
   height: inherit;
+  min-height: inherit;
   position: relative;
   z-index: 2;
 }
@@ -318,7 +321,7 @@ li a {
 }
 .cover-container {
   background-color: var(--lightCyan);
-  height: 100vh;
+  min-height: 100vh;
 }
 .clouds {
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 250 150' xml:space='preserve'%3E%3Cstyle%3E.st0%7Bfill:%23fff%7D%3C/style%3E%3Cpath class='st0' d='M225.5 145h-.5c-4.3 0-8.3 1.8-11.2 5H250v-25c-11.9 0-22.1 8.4-24.5 20zM36.2 150c-2.8-3.2-6.9-5-11.2-5h-.5c-2.4-11.6-12.6-20-24.5-20v25h36.2zM213.8 0c-5.5 6.2-5 15.7 1.2 21.2 2.7 2.5 6.3 3.8 10 3.8h25V0h-36.2zM0 0v25h25c8.3 0 15-6.7 15-15 0-3.7-1.4-7.2-3.8-10H0zM162.5 62.5c-.7 0-1.4 0-2.1.1-5.3-15-19.5-25.1-35.4-25.1-15.9 0-30.1 10.1-35.4 25.1-.7-.1-1.4-.1-2.1-.1-13.8 0-25 11.2-25 25s11.2 25 25 25h75c13.8 0 25-11.2 25-25s-11.2-25-25-25z'/%3E%3C/svg%3E");
@@ -378,9 +381,7 @@ li a {
 .grey {
   color: var(--grey80);
 }
-.header-menu > :first-child {
-  margin-right: var(--xsmall);
-}
+
 .account-div {
   padding: var(--xsmall) var(--small);
   background-color: var(--grey96);
@@ -510,13 +511,16 @@ img {
   .icon-link > :first-child {
     margin: 0;
   }
+  .ar .icon-link > :first-child {
+    margin: 0;
+  }
   .cover-title {
     font-size: 8vh;
   }
   .cover-logo {
     height: 6vh;
   }
-  .cover-button {
+  .cover-link {
     font-size: 3vh;
   }
   .hide {
@@ -531,9 +535,6 @@ img {
   .header-logo,
   .header-menu {
     flex-basis: 8%;
-  }
-  .header-menu > :first-child {
-    margin: 0;
   }
   .header-nav {
     flex-basis: 70%;
@@ -578,7 +579,7 @@ img {
   a:hover {
     color: var(--brandBright);
   }
-  .cover-button:hover {
+  .cover-link:hover {
     color: white;
     background-color: var(--brandBright);
   }
