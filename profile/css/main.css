@@ -66,10 +66,10 @@ section:not(:first-child) {
   background-color: #f4f4f4;
   min-height: calc(100vh - 3rem);
   padding: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-  /*   padding-top: 5rem;
- */
+/*   padding-top: 3rem;
+  padding-bottom: 4rem; */
+    padding-top: 5rem;
+
 }
 h1,
 h2,
