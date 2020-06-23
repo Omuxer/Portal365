@@ -114,6 +114,7 @@ figure {
 }
 .find {
   flex-basis: 100%;
+  width: 100%;
 }
 
 .fragment h2 {
