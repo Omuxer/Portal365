@@ -1,9 +1,8 @@
 /*  --- GLOBAL / VARIABLES ---  */
 :root {
   /* --- GLOBAL / VARIABLES / COLORS / PRIMARY COLORS --- */
-  --brandBright: hsl(165, 100%, 40%)
-  ;
-  --brandDark: hsl(240, 10%, 10%);;
+  --brandBright: hsl(165, 100%, 40%);
+  --brandDark: hsl(240, 100%, 10%);
 
   /* --- GLOBAL / VARIABLES / COLORS / GREY SHADES --- */
   --brandContent: hsl(240, 10%, 10%);
@@ -91,13 +90,13 @@ p {
   margin: 0;
   margin-top: var(--regular);
 }
-.fragment li{
+.fragment li {
   color: var(--neutral);
 }
-.li-links li, .li-links a{
+.li-links li,
+.li-links a {
   color: var(--brandLink);
 }
-
 
 .arrow {
   animation: move-down 1s ease-out alternate infinite;
@@ -118,6 +117,9 @@ figure {
   flex-basis: 100%;
   width: 100%;
 }
+.find .icon-vertical {
+  align-items: center;
+}
 
 .fragment h2 {
   position: relative;
@@ -128,21 +130,15 @@ span + h2 {
 }
 .fragment h2:after {
   content: "";
-  background: var(--brandBright);
-  height: 0.25rem;
+  background: var(--bluishWhite);
+  height: 1rem;
   right: 0;
-  bottom: 0.75rem;
+  bottom: 0.5rem;
+  border-radius: 1rem;
+  width: 100%;
   left: 0;
-  width: 105%;
   position: absolute;
   z-index: -1;
-}
-
-.icon-vertical span {
-  background: var(--brandBright);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 a {
@@ -179,7 +175,6 @@ a {
 .ar .cover-link {
   font-family: "tajawal", tahoma;
 }
-
 
 .icon-link {
   display: flex;
@@ -483,10 +478,15 @@ img {
   padding: 2rem;
 }
 
-.fragment p,
-.fragment li {
-  line-height: 1.75rem;
-  font-size: 1.25rem;
+.fragment p
+ {
+   font-size: 1.25rem;
+   line-height: 1.75rem;
+}
+
+.fragment li{
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 
 @media only screen and (max-width: 30cm) {
