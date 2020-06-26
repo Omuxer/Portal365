@@ -116,16 +116,19 @@ span + h2 {
 }
 
 .next {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-style: unset;
   border-radius: var(--large);
   color: var(--grey50);
   transition-duration: 0.3s;
   background-color: transparent;
   cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
   border: 1px solid var(--grey50);
   align-self: center;
-  padding: 0.5rem;
 }
 .icon-vertical {
   display: flex;
