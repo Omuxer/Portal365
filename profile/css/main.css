@@ -6,7 +6,7 @@
 
   /* --- GLOBAL / VARIABLES / COLORS / GREY SHADES --- */
   --brandContent: hsl(240, 10%, 10%);
-  --brandLink: hsl(240, 10%, 40%);
+  --brandLink: hsl(240, 20%, 40%);
   --grey50: hsl(240, 10%, 50%);
   --grey80: hsl(240, 10%, 80%);
   --grey90: hsl(240, 10%, 90%);
@@ -448,7 +448,6 @@ img {
   height: auto;
   width: 100%;
   max-width: 100%;
-  border-radius: var(--regular);
   transition-duration: 0.3s;
   /*   box-shadow: 0 0 20px var(--grey96);
  */
