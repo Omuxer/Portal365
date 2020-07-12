@@ -130,6 +130,10 @@ span + h2 {
   border: 1px solid var(--grey50);
   align-self: center;
 }
+.cover-link {
+  display: none;
+}
+
 .icon-vertical {
   display: flex;
   flex-direction: column;
@@ -502,5 +506,29 @@ img {
 @media only screen and (min-width: 1366px) {
   html {
     font-size: 1.125vw;
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  .next {
+    display: none;
+  }
+  .page-header {
+    display: none;
+  }
+  .cover-link {
+    display: initial;
+  }
+  section:not(:first-child) {
+    padding: 3.5rem;
+    min-height: 100vh;
+  }
+  @page {
+    margin: 0;
+    orientation: landscape;
   }
 }

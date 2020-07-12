@@ -1,223 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1798593664.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Portal365 Profile</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/1798593664.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-        <title>Portal365 Profile</title>
-    </head>
+  <body>
+    <main>
+      <section id="cover" class="cover-container">
+        <div class="cover-wrapper cover">
+          <div class="cover-logo logo-en"></div>
+          <h1 class="cover-title">A Grant Writing and Management System</h1>
+          <a class="next tilt" href="#problem">&#709;</a>
+          <a class="cover-link" href="#problem">www.portal365.org</a>
+        </div>
+      </section>
 
-    <body>
-        <main>
-            <section id="cover" class="cover-container">
-                <div class="cover-wrapper cover">
-                    <div class="cover-logo logo-en"></div>
-                    <h1 class="cover-title">A Grant Writing and Management System</h1>
-                    <a class="next tilt" href="#problem">&#709;</a>
-                    <!--                     <a class="next fixed" href="#problem">www.portal365.org</a>
- -->
-                </div>
-            </section>
+      <header class="page-header">
+        <a href="#cover" class="header-logo logo-en hide"></a>
+        <a href="#cover" class="header-logo logo-icon"></a>
 
-            <header class="page-header">
-                <a href="#cover" class="header-logo logo-en hide"></a>
-                <a href="#cover" class="header-logo logo-icon"></a>
+        <div class="header-nav">
+          <a class="icon-link problem-header" href="#problem"
+            ><span class="fas fa-exclamation-triangle show"></span
+            ><span class="hide">Problem</span></a
+          >
+          <a class="icon-link" href="#solution"
+            ><span class="fas fa-check-circle show"></span
+            ><span class="hide">Solution</span></a
+          >
+          <a class="icon-link" href="#traction"
+            ><span class="fas fa-chart-area show"></span
+            ><span class="hide">Traction</span></a
+          >
+          <a class="icon-link" href="#competitors"
+            ><span class="fa fa-th-large show"></span
+            ><span class="hide">Competitors</span></a
+          >
+          <a class="icon-link" href="#team"
+            ><span class="fa fa-users show"></span
+            ><span class="hide">Team</span></a
+          >
+          <a class="icon-link" href="#investment"
+            ><span class="fa fa-money-bill show"></span
+            ><span class="hide">Investment</span>
+          </a>
+          <a class="icon-link" href="#contactUs"
+            ><span class="fa fa-globe show"></span
+            ><span class="hide">Contact us</span>
+          </a>
+        </div>
+        <div class="header-menu">
+          <a
+            class="signup icon-link"
+            target="_blank"
+            href="https://www.portal365.org"
+            ><span class="fas fa-mouse-pointer show"></span
+            ><span class="hide">Website</span></a
+          >
+        </div>
+      </header>
+      <section id="problem" class="page intro">
+        <div class="fragment">
+          <div>
+            <div class="icon-vertical">
+              <span class="fas fa-exclamation-triangle title-icon"></span>
+              <h2 class="">Problem</h2>
+            </div>
+            <ul>
+              <li>Difficult grant writing</li>
+              <li>Low quality of management and reporting</li>
+              <li>Loss of staff</li>
+            </ul>
+          </div>
+          <figure>
+            <img src="imgs/problem.png" alt="" />
+          </figure>
+        </div>
+        <a class="next tilt" href="#solution">&#709;</a>
+      </section>
+      <section id="solution">
+        <div class="fragment">
+          <div>
+            <div class="icon-vertical">
+              <span class="fas fa-check-circle title-icon"></span>
+              <h2>Solution</h2>
+            </div>
+            <div>
+              <p class="bold">Portal365</p>
+              <p class="solution">
+                A Grant writing and management system built mainly for NGOs
+              </p>
+            </div>
+          </div>
+          <figure>
+            <img src="imgs/solution.png" alt="" />
+          </figure>
+        </div>
+        <a class="next tilt" href="#traction">&#709;</a>
+      </section>
+      <section id="traction">
+        <div class="fragment">
+          <div>
+            <div class="icon-vertical">
+              <span class="fa fa-chart-area title-icon"></span>
+              <h2>Traction*</h2>
+              <p class="label">* For the last year</p>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>34,000</td>
+                  <td>Website Traffic</td>
+                </tr>
+                <tr>
+                  <td>1,700</td>
+                  <td>Registered users</td>
+                </tr>
+                <tr>
+                  <td>200</td>
+                  <td>Active users</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <figure>
+            <img src="imgs/traction.png" alt="" />
+          </figure>
+        </div>
+        <a class="next tilt" href="#competitors">&#709;</a>
+      </section>
+      <section id="competitors">
+        <div class="fragment">
+          <div>
+            <div class="icon-vertical">
+              <span class="fa fa-th-large title-icon"></span>
+              <h2>Competitors</h2>
+            </div>
+            <ul>
+              <li>NGO Online</li>
+              <li>Fluxx</li>
+              <li>Eleo</li>
+              <li>Funds for NGOs</li>
+            </ul>
+          </div>
+          <figure>
+            <img src="imgs/competitors.png" alt="" />
+          </figure>
+        </div>
+        <a class="next tilt" href="#team">&#709;</a>
+      </section>
+      <section id="team">
+        <div class="fragment">
+          <div>
+            <div class="icon-vertical">
+              <span class="fas fa-users title-icon"></span>
+              <h2>Team</h2>
+            </div>
+            <ul>
+              <li>5 Software Developers</li>
+              <li>2 Marketers</li>
+              <li>1 Finance</li>
+              <li>1 Executive</li>
+            </ul>
+          </div>
+          <figure>
+            <img src="imgs/team.png" alt="" />
+          </figure>
+        </div>
+        <a class="next tilt" href="#investment">&#709;</a>
+      </section>
+      <section id="investment">
+        <div class="fragment">
+          <div>
+            <div class="icon-vertical">
+              <span class="fas fa-money-bill title-icon"></span>
+              <h2>Investment</h2>
+            </div>
+            <p>
+              We look for
+            </p>
 
-                <div class="header-nav">
-                    <a class="icon-link problem-header" href="#problem"><span
-                            class="fas fa-exclamation-triangle show"></span><span class="hide">Problem</span></a>
-                    <a class="icon-link" href="#solution"><span class="fas fa-check-circle show"></span><span
-                            class="hide">Solution</span></a>
-                    <a class="icon-link" href="#traction"><span class="fas fa-chart-area show"></span><span
-                            class="hide">Traction</span></a>
-                    <a class="icon-link" href="#competitors"><span class="fa fa-th-large show"></span><span
-                            class="hide">Competitors</span></a>
-                    <a class="icon-link" href="#team"><span class="fa fa-users show"></span><span
-                            class="hide">Team</span></a>
-                    <a class="icon-link" href="#investment"><span class="fa fa-money-bill show"></span><span
-                            class="hide">Investment</span>
-                    </a>
-                    <a class="icon-link" href="#contactUs"><span class="fa fa-globe show"></span><span
-                            class="hide">Contact
-                            us</span>
-                    </a>
-                </div>
-                <div class="header-menu">
-                    <a class="signup icon-link" target="_blank" href="https://www.portal365.org"><span
-                            class="fas fa-mouse-pointer show"></span><span class="hide">Website</span></a>
-                </div>
-            </header>
-            <section id="problem" class="page intro">
-
-                <div class="fragment">
-                    <div>
-                        <div class="icon-vertical"><span class="fas fa-exclamation-triangle title-icon"></span>
-                            <h2 class="">Problem</h2>
-                        </div>
-                        <ul>
-                            <li>Difficult grant writing</li>
-                            <li>Low quality of management and reporting</li>
-                            <li>Loss of staff</li>
-                        </ul>
-                    </div>
-                    <figure>
-                        <img src="imgs/problem.png" alt="">
-                    </figure>
-                </div>
-                <a class="next tilt" href="#solution">&#709;</a>
-
-            </section>
-            <section id="solution">
-                <div class="fragment">
-                    <div>
-                        <div class="icon-vertical"><span class="fas fa-check-circle title-icon"></span>
-                            <h2>Solution</h2>
-                        </div>
-                        <div>
-                            <p class="bold">Portal365</p>
-                            <p class="solution">
-                                A Grant writing and management system built mainly for NGOs</p>
-                        </div>
-                    </div>
-                    <figure>
-                        <img src="imgs/solution.png" alt="">
-                    </figure>
-                </div>
-                <a class="next tilt" href="#traction">&#709;</a>
-            </section>
-            <section id="traction">
-                <div class="fragment">
-
-                    <div>
-                        <div class="icon-vertical"><span class="fa fa-chart-area title-icon"></span>
-                            <h2>Traction*</h2>
-                            <p class="label">* For the last year</p>
-                        </div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>34,000</td>
-                                    <td>Website Traffic</td>
-                                </tr>
-                                <tr>
-                                    <td>1,700</td>
-                                    <td>Registered users</td>
-                                </tr>
-                                <tr>
-                                    <td>200</td>
-                                    <td>Active users</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <figure>
-                        <img src="imgs/traction.png" alt="">
-                    </figure>
-                </div>
-                <a class="next tilt" href="#competitors">&#709;</a>
-
-            </section>
-            <section id="competitors">
-                <div class="fragment">
-
-                    <div>
-                        <div class="icon-vertical"><span class="fa fa-th-large title-icon"></span>
-                            <h2>Competitors</h2>
-                        </div>
-                        <ul>
-                            <li>NGO Online</li>
-                            <li>Fluxx</li>
-                            <li>Eleo</li>
-                            <li>Funds for NGOs</li>
-                        </ul>
-                    </div>
-                    <figure>
-                        <img src="imgs/competitors.png" alt="">
-                    </figure>
-
-                </div>
-                <a class="next tilt" href="#team">&#709;</a>
-
-            </section>
-            <section id="team">
-                <div class="fragment">
-
-                    <div>
-                        <div class="icon-vertical"><span class="fas fa-users title-icon"></span>
-                            <h2>Team</h2>
-                        </div>
-                        <ul>
-                            <li>5 Software Developers</li>
-                            <li>2 Marketers</li>
-                            <li>1 Finance</li>
-                            <li>1 Executive</li>
-                        </ul>
-                    </div>
-                    <figure>
-                        <img src="imgs/team.png" alt="">
-                    </figure>
-                </div>
-                <a class="next tilt" href="#investment">&#709;</a>
-
-            </section>
-            <section id="investment">
-                <div class="fragment">
-
-                    <div>
-                        <div class="icon-vertical"><span class="fas fa-money-bill title-icon"></span>
-                            <h2>Investment</h2>
-                        </div>
-                        <p>
-                            We look for
-                        <p class="bold">
-                            280,000&euro;
-
-                        </p>
-                        <p> seed investment
-                        </p>
-                    </div>
-                    <figure>
-                        <img src="imgs/investment.png" alt="">
-                    </figure>
-                </div>
-                <a class="next tilt" href="#contactUs">&#709;</a>
-
-            </section>
-            <section id="contactUs">
-                <div class="fragment">
-                    <div class="find">
-                        <div class="icon-vertical"><span class="fas fa-globe title-icon"></span>
-                            <h2>Contact Us</h2>
-                        </div>
-                        <div class="channels">
-                            <a target="_blank" class="channel" href="https://www.portal365.org/">
-                                <span class="fas fa-mouse-pointer channel-icon"></span>
-                                <p>www.portal365.org</p>
-                            </a>
-                            <a target="_blank" class="channel" href="mailto:info@portal365.org">
-                                <span class="fas fa-at channel-icon"></span>
-                                <p>adel@portal365.org</p>
-                            </a>
-                            <a target="_blank" class="channel" href="https://www.facebook.com/portal365.org">
-                                <span class="fab fa-facebook channel-icon"></span>
-                                <p>@portal365org</p>
-                            </a>
-                            <a target="_blank" class="channel" href="https://www.linkedin.com/company/portal365org">
-                                <span class="fab fa-linkedin channel-icon"></span>
-                                <p>@portal365org</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <a class="next tilt" href="#cover">&#708;</a>
-
-            </section>
-
-        </main>
-    </body>
-
+            <p class="bold">
+              280,000&euro;
+            </p>
+            <p>seed investment</p>
+          </div>
+          <figure>
+            <img src="imgs/investment.png" alt="" />
+          </figure>
+        </div>
+        <a class="next tilt" href="#contactUs">&#709;</a>
+      </section>
+      <section id="contactUs">
+        <div class="fragment">
+          <div class="find">
+            <div class="icon-vertical">
+              <span class="fas fa-globe title-icon"></span>
+              <h2>Contact Us</h2>
+            </div>
+            <div class="channels">
+              <a
+                target="_blank"
+                class="channel"
+                href="https://www.portal365.org/"
+              >
+                <span class="fas fa-mouse-pointer channel-icon"></span>
+                <p>www.portal365.org</p>
+              </a>
+              <a
+                target="_blank"
+                class="channel"
+                href="mailto:info@portal365.org"
+              >
+                <span class="fas fa-at channel-icon"></span>
+                <p>adel@portal365.org</p>
+              </a>
+              <a
+                target="_blank"
+                class="channel"
+                href="https://www.facebook.com/portal365.org"
+              >
+                <span class="fab fa-facebook channel-icon"></span>
+                <p>@portal365org</p>
+              </a>
+              <a
+                target="_blank"
+                class="channel"
+                href="https://www.linkedin.com/company/portal365org"
+              >
+                <span class="fab fa-linkedin channel-icon"></span>
+                <p>@portal365org</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="next tilt" href="#cover">&#708;</a>
+      </section>
+    </main>
+  </body>
 </html>

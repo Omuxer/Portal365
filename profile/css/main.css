@@ -572,8 +572,8 @@ img {
     display: none;
   }
   section:not(:first-child) {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding: 3.5rem;
+    min-height: 100vh;
   }
   @page {
     margin: 0;
