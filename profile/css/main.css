@@ -563,3 +563,20 @@ img {
     font-size: 1.125vw;
   }
 }
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  .page-header {
+    display: none;
+  }
+  section:not(:first-child) {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  @page {
+    margin: 0;
+    orientation: landscape;
+  }
+}
