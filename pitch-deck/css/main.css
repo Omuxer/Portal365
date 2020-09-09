@@ -375,9 +375,6 @@ img {
 .channel {
   padding: var(--small);
 }
-.title-icon {
-  display: none;
-}
 @media only screen and (max-width: 25cm), (max-aspect-ratio: 3/4) {
   .fragment > * {
     flex-basis: 35%;
@@ -505,12 +502,10 @@ img {
   }
 }
 
+
 @media print {
   * {
     -webkit-print-color-adjust: exact;
-    padding-top: 3rem;
-    min-height: 100vh;
-    padding-bottom: 4rem;
   }
 
   .next {
