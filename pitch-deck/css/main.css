@@ -50,11 +50,6 @@ section {
 }
 section:not(:first-child) {
   min-height: calc(100vh - 3vh);
-  /*padding-bottom: 4rem; */
-  /*   padding-top: 3rem;
-    */
-  /*   min-height: 100vh;
-    */
   justify-content: space-evenly;
   padding: 2rem;
   padding-top: 5rem;
@@ -121,13 +116,13 @@ span + h2 {
   justify-content: center;
   border-style: unset;
   border-radius: var(--large);
-  color: var(--grey50);
+  color: var(--brandBright);
   transition-duration: 0.3s;
   background-color: transparent;
   cursor: pointer;
   height: 2.5rem;
   width: 2.5rem;
-  border: 1px solid var(--grey50);
+  border: 1px solid var(--brandBright);
   align-self: center;
 }
 .cover-link {
@@ -216,6 +211,8 @@ table {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  background-color: var(--brandDark);
+  color: white;
 }
 .wrapper.cover {
   background-color: transparent;
@@ -234,6 +231,7 @@ table {
   height: 2.5rem;
   width: 100%;
   background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 75'%3E%3Cdefs%3E%3Cstyle%3E.cls-2%7Bfill:%23ffffff%7D%3C/style%3E%3C/defs%3E%3Cpath d='M37.5 0A37.49 37.49 0 0 0 5 56.25h13.75V70A37.5 37.5 0 1 0 37.5 0zm0 67.5a30 30 0 0 1-11.25-2.18v-9.07H37.5a18.75 18.75 0 0 0 0-37.5H18.75v30H9.68A30 30 0 1 1 37.5 67.5zM26.25 48.75v-22.5H37.5a11.25 11.25 0 0 1 0 22.5z' fill='%2300cc99'/%3E%3Cpath class='cls-2' d='M287.5 15h7.5v45h-7.5zM205 22.5h-7.5V60h7.5V41.25A11.25 11.25 0 0 1 216.25 30v-7.5A18.69 18.69 0 0 0 205 26.25zM275 26.25a18.75 18.75 0 1 0 0 30V60h7.5V22.5H275zM263.75 52.5A11.25 11.25 0 1 1 275 41.25a11.25 11.25 0 0 1-11.25 11.25zM131.25 15H105v45h7.5v-7.5h18.75a18.75 18.75 0 0 0 0-37.5zm0 30H112.5V22.5h18.75a11.25 11.25 0 0 1 0 22.5zM173.75 22.5a18.75 18.75 0 1 0 18.75 18.75 18.74 18.74 0 0 0-18.75-18.75zm0 30A11.25 11.25 0 1 1 185 41.25a11.25 11.25 0 0 1-11.25 11.25zM228.75 41.25V30h7.5v-7.5h-7.5V15h-7.5v26.25A18.74 18.74 0 0 0 240 60v-7.5a11.25 11.25 0 0 1-11.25-11.25zM350.1 30l8.69-15H350l-13 22.5a15 15 0 1 0 13.1-7.5zm-.1 22.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5zM330 15h-27.5v7.5h14.41l-8.69 15H315a7.5 7.5 0 1 1-7.5 7.5H300a15 15 0 1 0 20.67-13.89L330 15zM385.12 30h-4.94l2.17-7.5h15.15V15h-21L370 37.5h15a7.5 7.5 0 1 1-7.5 7.5H370a15 15 0 1 0 15.12-15z'/%3E%3C/svg%3E");
 }
 
 .ar .header-logo {
@@ -247,7 +245,7 @@ table {
 
 .cover-title {
   font-size: calc(5vw + 2rem);
-  font-weight: 600;
+  font-weight: 800;
   word-wrap: break-word;
   line-height: calc(5vw + 4rem);
 }
@@ -284,6 +282,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 2;
+  box-shadow: 5px 5px 10px rgba(200, 200, 200, 0.25);
 }
 
 .header-logo {
@@ -373,9 +372,6 @@ img {
   color: var(--grey50);
 }
 
-.show {
-  display: none;
-}
 .channel {
   padding: var(--small);
 }
@@ -512,6 +508,9 @@ img {
 @media print {
   * {
     -webkit-print-color-adjust: exact;
+    padding-top: 3rem;
+    min-height: 100vh;
+    padding-bottom: 4rem;
   }
 
   .next {
