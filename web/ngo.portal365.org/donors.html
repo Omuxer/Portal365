@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head id="header">
+        <!-- JQurey script to include header and footer-->
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <title>Donors</title>
+    </head>
+
+    <body class="donors-body">
+        <header id="header"></header>
+        <main>
+            <section id="content-navigation">
+                <div class="flex">
+                    <a class="flex sibling" href="home.html"><span class="icon e-regular home">&nbsp;</span>
+                        Home</a>&nbsp;/&nbsp;<span class="inactive">Donors</span>
+                </div>
+            </section>
+
+            <section id="pageTitle" class="flex column  margin-up-and-down-large">
+                <div class="flex ">
+                    <span class="icon e-medium margin-right-xsmall grants-filled "></span>
+                    <div>
+                        <h1 class="page-title">Donors</h1>
+                    </div>
+                </div>
+            </section>
+            </section>
+
+            <section id="actionsBar" class="flex space-between actions-bar">
+                <div class="flex margin-children-right-xsmall filter-bar">
+                    <div class="label-input-div">
+                        <label for="countries">Countries: </label>
+                        <select name="" id="countries" class="select-menu">
+                            <option value="" selected>All</option>
+                            <option value="">Yemen</option>
+                            <option value="">Saudi Arabia</option>
+                            <option value="">Jordan</option>
+                            <option value="">Iraq</option>
+                            <option value="">Syria</option>
+                            <option value="">Lebanon</option>
+                            <option value="">Turkey</option>
+                            <option value="">USA</option>
+                            <option value="">Lithuania</option>
+                            <option value="">United Kingdom</option>
+                        </select>
+                    </div>
+                    <div class="label-input-div">
+                        <label for="programs">Programs: </label>
+                        <select name="" id="programs" class="select-menu">
+                            <option value="" selected>All</option>
+                            <option value="">Eduction</option>
+                            <option value="">WASH</option>
+                            <option value="">Governance</option>
+                            <option value="">Health</option>
+                            <option value="">Protection</option>
+                            <option value="">Food security</option>
+                            <option value="">Shelter</option>
+                            <option value="">Nutrition</option>
+                            <option value="">Entrepreneurship</option>
+                            <option value="">Women</option>
+                        </select>
+                    </div>
+                    <div class="label-input-div">
+                        <label for="donors">Donors: </label>
+                        <select name="" id="programs" class="select-menu">
+                            <option value="" selected>All</option>
+                            <option value="">Unicef</option>
+                            <option value="">Ocha</option>
+                            <option value="">Fao</option>
+                            <option value="">USAID</option>
+                            <option value="">Active Citizens Fund</option>
+                            <option value="">GroFin</option>
+                            <option value="">The Joint Peace Fund</option>
+                            <option value="">National Institutes of Health</option>
+                            <option value="">India Foundation for the Arts</option>
+                            <option value="">Dutch Research Council</option>
+                        </select>
+                    </div>
+                    <div class="label-input-div">
+                        <label for="orderBy">Order By: </label>
+                        <select name="" id="orderBy" class="select-menu">
+                            <option value="" selected>Added recently</option>
+                            <option value="">Alphabetically</option>
+                            <option value="">Grant Count </option>
+                        </select>
+                    </div>
+
+                </div>
+                <input type=" text" placeholder="Search">
+            </section>
+
+            <section id="content-wrapper">
+                <table class="table-flex">
+                    <tbody>
+                        <tr>
+                            <td class="icon e-regular donors-filled"></td>
+                            <td class="table-header"><a><span class="order">⥯</a></span>Donor's Name</td>
+                            <td class="table-header">Program</td>
+                            <td class="table-header"><a><span class="order">⥯</a></span>Grants</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">United Nation Development Programs</a> </td>
+                            <td class="tag-childern "><a>Education</a><a>Food
+                                    security</a></td>
+                            <td>50</td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">CARE International</a></td>
+                            <td class="tag-childern "><a>Protection</a></td>
+                            <td>15
+                            </td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">Partners in Health</a></td>
+                            <td class="tag-childern "><a>Shelter</a><a>Food
+                                    security</a></td>
+                            <td>10</td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">Clinton Health Access Initiative</a></td>
+                            <td class="tag-childern "><a>Capacity Bulding</a></td>
+                            <td>23</td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">UNICEF</a></td>
+                            <td class="tag-childern "><a>Shelter</a><a>Food
+                                    security</a></td>
+                            <td>14</td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">Mercy Corps</a></td>
+                            <td class="tag-childern "><a>Capacity Bulding</a></td>
+                            <td>9</td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">United Nation Development Programs</a> </td>
+                            <td class="tag-childern "><a>Education</a><a>Food
+                                    security</a></td>
+                            <td>50</td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">CARE International</a></td>
+                            <td class="tag-childern "><a>Protection</a></td>
+                            <td>15
+                            </td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">Partners in Health</a></td>
+                            <td class="tag-childern "><a>Shelter</a><a>Food
+                                    security</a></td>
+                            <td>10</td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="icon e-regular donors"></td>
+                            <td><a href="#donorDetails">Clinton Health Access Initiative</a></td>
+                            <td class="tag-childern "><a>Capacity Bulding</a></td>
+                            <td>23</td>
+                            <td><a class="icon e-regular actions">&nbsp;</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="number-childern margin-children-right-small">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </div>
+
+        </main>
+        <script>
+            $(function () {
+                $("head").load("modules/head.html");
+                $("header").load("modules/header.html");
+            });
+        </script>
+    </body>
+
+</html>
