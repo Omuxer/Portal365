@@ -29,6 +29,11 @@ body {
   font-size: var(--t-small);
   font-family: "DM Sans", sans-serif, tahoma;
 }
+img {
+  max-width: 100%;
+  align-self: center;
+}
+
 input,
 button,
 .select-menu {
@@ -40,7 +45,9 @@ button,
 main {
   padding: var(--regular);
 }
-
+.center {
+  text-align: center;
+}
 .overview-wrapper {
   border-radius: var(--xsmall);
   margin-bottom: var(--medium);

@@ -292,6 +292,9 @@ button {
 .align-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .column {
   flex-direction: column;
 }
