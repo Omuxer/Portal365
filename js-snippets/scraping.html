@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scraping data</title>
+    <style>
+      table td {
+        padding: 5px;
+        border: solid 1px #e8eef4;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="ContentPlaceHolder1_lb_posttitle">Grant title</div>
+      <div id="ContentPlaceHolder1_lb_DonorAgency">
+        ContentPlaceHolder1_lb_DonorAgency
+      </div>
+      <div id="ContentPlaceHolder1_lb_deadlinedate">
+        ContentPlaceHolder1_lb_deadlinedate
+      </div>
+      <div id="ContentPlaceHolder1_lb_GrantSize">
+        ContentPlaceHolder1_lb_GrantSize
+      </div>
+      <div id="ContentPlaceHolder1_lb_refurl">
+        ContentPlaceHolder1_lb_refurl
+      </div>
+      <div id="ContentPlaceHolder1_postContent">
+        ContentPlaceHolder1_postContent
+      </div>
+      <div id="div1">Yemen Kuwait</div>
+      <div id="divFocusIssue">
+        <div>education</div>
+      </div>
+      <h1>Get data</h1>
+      <button onclick="writeDataToTable()">Get Data</button>
+      <table>
+        <tbody>
+          <tr id="grantTitle">
+            <td>Grant Title:</td>
+          </tr>
+          <tr id="grantDonor">
+            <td>Grant Donor:</td>
+          </tr>
+          <tr id="grantDeadline">
+            <td>Grant Deadline:</td>
+          </tr>
+          <tr id="grantSize">
+            <td>Grant Size:</td>
+          </tr>
+          <tr id="grantApplication">
+            <td>Grant Application:</td>
+          </tr>
+          <tr id="grantBody">
+            <td>Grant Body:</td>
+          </tr>
+          <tr id="grantLocations">
+            <td>Grant Locations:</td>
+          </tr>
+          <tr id="grantPrograms">
+            <td>Grant Programs:</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script>
+      // get textContent from the page
+      const grantTitle = document.getElementById(
+        "ContentPlaceHolder1_lb_posttitle"
+      ).textContent;
+      const grantDonor = document.getElementById(
+        "ContentPlaceHolder1_lb_DonorAgency"
+      ).textContent;
+      const grantDeadline = document.getElementById(
+        "ContentPlaceHolder1_lb_deadlinedate"
+      ).textContent;
+      const grantSize = document.getElementById(
+        "ContentPlaceHolder1_lb_GrantSize"
+      ).textContent;
+      const grantApplication = document.getElementById(
+        "ContentPlaceHolder1_lb_refurl"
+      ).textContent;
+      const grantBody = document.getElementById(
+        "ContentPlaceHolder1_postContent"
+      ).textContent;
+      const grantLocations = document
+        .getElementById("div1")
+        .textContent.split("\n")
+        .filter((country) => country !== "");
+      const grantPrograms = document
+        .querySelector("#divFocusIssue > div")
+        .textContent.trim().textContent;
+
+      const arrayOfData = [
+        grantTitle,
+        grantDonor,
+        grantDeadline,
+        grantSize,
+        grantApplication,
+        grantBody,
+        grantLocations,
+        grantPrograms,
+      ];
+      function writeDataToTable() {
+        const newTd = document.createElement("td");
+        const tdsWithData = arrayOfData.map((d) => console.log(d));
+
+        console.log(tdsWithData);
+        // const newTd = (document
+        //   .getElementById("grantTitle")
+        //   .insertCell(-1).innerHTML = "hi");
+        // console.log(newTd);
+      }
+    </script>
+  </body>
+</html>

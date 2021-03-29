@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+  </head>
+  <body>
+<main id="app">
+
+    <div id="listId">
+        <input  class="v-list-item__title" type="checkbox">Yemen - MEN </input>
+        <input class="v-list-item__title"  type="checkbox">Albania - NIA </input>
+        <input class="v-list-item__title"  type="checkbox">andora - ORA </input>
+    </div>
+</main>
+
+
+  <script>
+    // Functions
+    function ConvertCSVToArray(CSV) {
+      return CSV.split(", ");
+    }
+    function pushIntoArray(array, item) {
+      return array.push(item);
+    }
+
+    // Get a country list items, then get text content, then remove suffexes from the text content
+    function makeAllCountriesArray(allCountries) {
+      const AllCountriesArray = [];
+
+      function removeCountrySuffex(countryWithSuffex) {
+        return countryWithSuffex.slice(0, countryWithSuffex.length - 6);
+      }
+      function getTextContent(listItem) {
+        return listItem.textContent;
+      }
+
+      for (country of allCountries) {
+        // Get text Content from each item
+        const countryItemTextContent = getTextContent(country);
+        // Romve " - XYZ" from each text content
+        const countryCoreName = removeCountrySuffex(countryItemTextContent);
+        // Push item to array
+        pushIntoArray(AllCountriesArray, countryCoreName);
+      }
+      return AllCountriesArray;
+    }
+
+    function getMatchedCountriesIndexes(subsetCountries, allCountries) {
+      const countriesIndexes = [];
+      let countryIndex = 0;
+      // loop through all countries
+      for (i = 0; i < subsetCountries.length; i++) {
+        countryIndex = allCountries.indexOf(subsetCountries[i]);
+        if (countryIndex > 0)
+        allCountriesListItems[countryIndex].click()
+      }
+      return countriesIndexes;
+    }
+
+    // ------- START HERE -------
+
+    // Get subsetCountries from user
+    const subsetCountriesString = prompt("Enter countries in CSV format");
+    // Convert subsetCountries to array
+    const subsetCountriesArray = ConvertCSVToArray(subsetCountriesString);
+    // Get countries dropdown list
+    const countryDropdownList = document.querySelector("#app > div:last-child");
+    // Get all countries list from the HTML documnet
+    const allCountriesListItems =  document.querySelectorAll("#app > div:last-child .v-list-item__title");
+
+    // Convert the countries list to an array
+    const allCountriesArray = makeAllCountriesArray(allCountriesListItems);
+    // Find matches between subset countries and all arries
+    getMatchedCountriesIndexes(subsetCountriesArray,allCountriesArray);
+  </script>
+  </body>
+</html>
